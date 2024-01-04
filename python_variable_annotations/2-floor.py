@@ -2,6 +2,6 @@
 """main function"""
 
 
-def add(n: float) -> int:
+def floor(n: float) -> int:
     """Function to concat two strings"""
     return n//1
