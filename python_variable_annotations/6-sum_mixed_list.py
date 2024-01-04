@@ -2,9 +2,12 @@
 """main function"""
 
 
-def sum_mixed_list(input_list: List[float, int]) -> float():
+from typing import List
+
+
+def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float():
     """Function to return the string representation of a float"""
     sum = 0
-    for x in input_list:
+    for x in mxd_lst:
         sum += x
     return sum
