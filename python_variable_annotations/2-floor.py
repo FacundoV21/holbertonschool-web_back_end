@@ -3,5 +3,5 @@
 
 
 def floor(n: float) -> int:
-    """Function to concat two strings"""
-    return n//1
+    """Function to return the floor of a float"""
+    return int(n)
