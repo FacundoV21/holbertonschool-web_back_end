@@ -15,9 +15,9 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
     orgDelays: List = []
 
-    for _ in range(n):
-        min_delay = min(aDelays)
-        orgDelays.append(min_delay)
-        aDelays.remove(min_delay)
+    for i in range(n):
+        mDelay = min(aDelays)
+        orgDelays.append(mDelay)
+        aDelays.remove(mDelay)
 
     return orgDelays
