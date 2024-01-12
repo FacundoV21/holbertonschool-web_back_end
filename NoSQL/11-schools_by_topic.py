@@ -5,7 +5,7 @@
 
 def schools_by_topic(mongo_collection, topic):
     """ lists schools by topic """
-    list = mongo_collection.find({"topics": topics})
-    if not list:
+    lista = mongo_collection.find({"topics": topics})
+    if not lista:
         return []
-    return list
+    return lista
