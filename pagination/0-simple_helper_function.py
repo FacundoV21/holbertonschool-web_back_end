@@ -5,6 +5,7 @@
     to return in a list for those particular pagination parameters
 """
 
+
 def index_range(page, page_size):
     """returns the index and page"""
     fPage = (page - 1) * page_size
