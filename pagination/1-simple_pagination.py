@@ -36,7 +36,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-
+        """ gets the index of a page"""
         assert (type(page), type(page_size)) == (int, int)
         assert page > 0
         assert page_size > 0
