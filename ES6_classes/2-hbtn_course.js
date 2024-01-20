@@ -5,8 +5,8 @@ export default class HolbertonCourse {
     this.students = students;
   }
 
-  isString(this) {
-    if (typeof this !== 'string') throw new TypeError('Name must be a string');
+  isString(value) {
+    if (typeof value !== 'string') throw new TypeError('Name must be a string');
   }
 
   isNumber(value) {
