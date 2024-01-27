@@ -1,6 +1,5 @@
-import { resolve } from "path";
+import { resolve } from 'path';
 
 export default function getResponseFromAPI() {
-  return (new Promise((resolve) => {resolve('a');}
-  ));
+  return (new Promise((resolve) => { resolve('a'); }));
 }
