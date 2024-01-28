@@ -1,6 +1,3 @@
-import { error } from "console";
-import { reject } from "lodash";
-
 export default function getResponseFromAPI(success) {
   return (new Promise((resolve) => { resolve('a');
     if (success === true) {
