@@ -3,7 +3,7 @@ export default function handleResponseFromAPI(promise) {
     .then(() => { console.log('Got a response from the API'); })
     .then(() => ({ 
         status: 200,
-        body: 'Success',
+        body: 'success',
      }))
     .catch(() => {
       return new Error();
