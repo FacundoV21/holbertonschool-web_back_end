@@ -4,8 +4,6 @@ export default function handleResponseFromAPI(promise) {
     .then(() => ({ 
         status: 200,
         body: 'success',
-     }))
-    .catch(() => {
-      return new Error();
-    });
+    }))
+    .catch(() => new Error());
 }
