@@ -1,9 +1,9 @@
 export default function getListStudentIds(arr) {
   const retArr = [];
   if (Array.isArray(arr)) {
-    for (user of arr) {
-      retArr.push(user.id);
-    }
+    let retArr = arr.map(function(element){
+        return arr.id;
+    })
   }
   return (retArr);
 }
