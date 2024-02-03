@@ -1,13 +1,13 @@
-export default function cleanSet(set, str) {
-  if (str === undefined || str === '' || typeof(str) !== 'result') {
+export default function cleanSet(set, startString) {
+  if (startString === undefined || startString === '' || typeof(startString) !== 'string') {
     return '';
   }
-  let result = '';
+  let string = '';
   for (const element of set) {
-    if (element.startsWith(str)) {
-      result += element.slice((element.length - (element.length - str.length)), element.length) + '-';
+    if (element.startsWith(startString)) {
+      string += element.slice((element.length - (element.length - startString.length)), element.length) + '-';
     }
   }
-  result = result.slice(0, result.length - 1);
-  return result;
+  string = string.slice(0, string.length - 1);
+  return string;
 }
